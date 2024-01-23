@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="images/psi-logo.png" type="image/x-icon" />
+    <title>StudentWell</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="halamanKonsultasi.css" />
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-logo">StudentWell</div>
+
+      <nav class="navbar">
+        <a href="beranda.html">Beranda</a>
+        <a href="halamanKonsultasi.html">Konsultasi</a>
+        <a href="#">Komunitas</a>
+        <a href="#">Artikel</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menubar" class="fas fa-bars"></div>
+        <a href="#">contact</a>
+      </div>
+    </header>
+
+    <section>
+      <h1>Konsultasi Mental Health</h1>
+      <form
+        action="submit_form.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="ttl">Tempat dan Tanggal Lahir:</label>
+        <input type="text" id="ttl" name="ttl" required />
+
+        <label for="keluhan">Keluhan:</label>
+        <textarea id="keluhan" name="keluhan" required></textarea>
+
+        <label for="psikolog">Pilih Psikolog Terdekat:</label>
+        <select id="psikolog" name="psikolog">
+          <option value="psikolog1">Psikolog 1</option>
+          <option value="psikolog2">Psikolog 2</option>
+          <option value="psikolog3">Psikolog 3</option>
+        </select>
+
+        <label for="file">Upload Surat Pendukung:</label>
+        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Form Konsultasi Psikolog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
