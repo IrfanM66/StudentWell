@@ -360,7 +360,8 @@ html {
   line-height: 1;
 }
 .footer {
-  padding: 6rem 7%;
+  padding: 1rem;
+  font-size: medium;
   background: var(--third);
 }
 .main-footer {
