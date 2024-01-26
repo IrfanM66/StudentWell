@@ -63,17 +63,9 @@ select {
 .button {
   color: #ffffff;
   padding: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   border: none;
   cursor: pointer;
   border-radius: 30px;
 }
 
-footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}

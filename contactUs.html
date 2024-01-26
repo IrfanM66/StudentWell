@@ -7,17 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="halamanKonsultasi.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -32,65 +31,68 @@
       </nav>
     </header>
 
-    <section>
-      <h1>Konsultasi Mental Health</h1>
+    <div class="main-section">
+      <h1>Contact Us</h1>
       <p>
-        Fitur Konsultasi Mental Health memungkinkan anda untuk mengajukan
-        konsultasi dengan Psikolog di sekitar anda dan mengefisienkan waktu agar
-        tidak lagi menunggu terlalu lama
+        Pada fitur Contact Us, pengguna dapat menghubungi admin untuk keluhan tertentu.
       </p>
-      <form method="post" enctype="multipart/form-data">
-        <label for="nama">Nama Lengkap:</label>
-        <input
-          id="fullname col-md-6"
-          class="form-control"
-          type="text"
-          pattern=".{6,50}"
-          title="Your name must be 5 to 50 characters"
-          required
-        />
+    </div>
 
-        <label for="ttl">Tempat dan Tanggal Lahir:</label>
-        <input
-          id="date col-md-6"
-          class="form-control"
-          type="text"
-          pattern=".{6,50}"
-          title="Date must be 5 to 50 characters"
-          required
-        />
-
-        <label for="keluhan">Keluhan:</label>
-        <textarea class="form-control" style="resize: none"></textarea>
-
-        <label for="psikolog">Pilih Psikolog Terdekat:</label>
-        <select id="psikolog" name="psikolog">
-          <option value="psikolog1">
-            Cahaya Nurani Center (Biro Psikolog)
-          </option>
-          <option value="psikolog2">Layanan Psikologi SIM</option>
-          <option value="psikolog3">Gemilang Psikolog Jember</option>
-          <option value="psikolog3">Lainnya...</option>
-        </select>
-
-        <div class="mb-3">
-          <label for="formFile" class="form-label"
-            >Upload Surat Pendukung</label
-          >
-          <input class="form-control" type="file" id="formFile" />
-        </div>
-
-        <div class="button">
-          <input
-            class="d-grid gap-2 col-6 mx-auto"
+    <section class="contact">
+      <div class="form_container">
+        <img class="form_image" src="images/cute.jpg" alt="image" />
+        <form onsubmit="contactUsForm(event)">
+          <h2 class="mb-3">Contact Us</h2>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" />
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="InputDesciption"
+              class="description"
+              style="margin-bottom: 10px"
+              >Description</label
+            >
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a desc here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+            </div>
+          </div>
+          <button
             type="submit"
-            value="Submit"
-          />
-        </div>
-      </form>
+            class="submit btn btn-warning"
+            style="color: white"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
 
-   <footer>
+    <footer>
       <h2 class="footer_title">StudentWell</h2>
       <p class="footer_info">
         Gumuk Kerang, Karangrejo, Kec. Sumbersari, Kabupaten Jember, Jawa Timur
